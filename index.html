@@ -10,18 +10,39 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/036226d307.js" crossorigin="anonymous"></script>
 
+    <!-- Google font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        manrope: ['Manrope', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
     <title>Assignment_3</title>
 </head>
 
-<body>
-    <!-- Header section starts -->
+<body class="font-manrope">
+    <!-- Header section starts here-->
     <header class="bg-gradient-to-b from-[#f4f4f4] to-white">
+        <!-- Nav section starts here-->
         <nav class="w-11/12 mx-auto">
             <div class="navbar">
                 <div class="navbar-start">
-                    <i
-                        class="fa-solid fa-arrow-right bg-[#ABEF5F] h-7 w-7 inline-flex justify-center items-center rounded-2xl -rotate-45"></i>
-                    <h1 class="text-4xl font-bold pb-1">Rinterio</h1>
+                    <div class="flex justify-center items-center gap-2">
+                        <div>
+                            <i
+                        class="fa-solid fa-arrow-right bg-[#ABEF5F] h-8 w-8 inline-flex justify-center items-center rounded-2xl -rotate-45"></i>
+                        </div>
+                        <div><h1 class="text-3xl font-bold pt-1">Rinterio</h1></div>
+                    </div>
 
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -36,29 +57,32 @@
                 <div class="navbar-end">
                     <div class="hidden sm:block">
                         <div class="flex gap-5">
-                            <button class="bg-white h-8 w-8 inline-flex justify-center items-center rounded-3xl text-xl text-gray-600 p-5">
+                            <button
+                                class="bg-white h-8 w-8 inline-flex justify-center items-center rounded-3xl text-xl text-gray-600 p-5">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <button class="bg-white h-8 w-8 inline-flex justify-center items-center rounded-3xl text-xl text-gray-600 p-5">
+                            <button
+                                class="bg-white h-8 w-8 inline-flex justify-center items-center rounded-3xl text-xl text-gray-600 p-5">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </button>
-                                <button class="bg-[#ABEF5F] rounded-3xl px-3 py-2 font-bold flex gap-2">
-                                    <div>
-                                        Book Consult
-                                    </div>
-                                    <div class="gap-1">
-                                        <i
-                                            class="fa-solid fa-arrow-right text-white bg-black rounded-2xl -rotate-45 w-6 h-6 inline-flex justify-center items-center"></i>
-                                    </div>
-                                </button>              
-                            
+                            <button class="bg-[#ABEF5F] rounded-3xl px-3 py-2 font-bold flex gap-2">
+                                <div>
+                                    Book Consult
+                                </div>
+                                <div class="gap-1">
+                                    <i
+                                        class="fa-solid fa-arrow-right text-white bg-black rounded-2xl -rotate-45 w-6 h-6 inline-flex justify-center items-center"></i>
+                                </div>
+                            </button>
+
                         </div>
 
                     </div>
-                    
+
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <i class="fa-solid fa-bars bg-white h-8 w-8 inline-flex justify-center items-center rounded-3xl text-2xl p-5"></i>
+                            <i
+                                class="fa-solid fa-bars bg-white h-8 w-8 inline-flex justify-center items-center rounded-3xl text-2xl p-5"></i>
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-28 p-2 shadow right-0">
@@ -72,6 +96,31 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Banner section starts here  -->
+        <section class="w-11/12 mx-auto">
+            <div class="flex flex-col justify-center items-center">
+                <img src="./assets/banner.png" alt="">
+            <h1 class="text-center font-extrabold text-6xl w-6/7 py-6">A barn house of this design has a striking appearance</h1>
+            <p class="text-center w-3/4 text-[16px] pb-8">The barn house captivates with its blend of rustic charm and modern sophistication,
+                featuring weathered wood, sleek metal accents, and large windows that flood the space with natural
+                light.
+            </p>
+            <div class="pb-24">
+                <button class="bg-[#ccff91ef] rounded-3xl px-4 py-2 font-bold flex gap-2">
+                    <div>
+                        View Details
+                    </div>
+                    <div class="gap-1">
+                        <i
+                            class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-2xl -rotate-45 w-6 h-6 inline-flex justify-center items-center"></i>
+                    </div>
+                </button>
+
+            </div>
+        </div>
+
+        </section>
     </header>
 
 
