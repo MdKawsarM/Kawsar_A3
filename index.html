@@ -21,6 +21,9 @@
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif'],
                     },
+                    backgroundImage: {
+                        'inputBg': "url('./assets/bg.jpg')"
+                    }
                 },
             },
         }
@@ -268,10 +271,11 @@
                     </button>
                 </div>
                 <!-- text-section  -->
-            <div class="flex-1 text-center mb-5 sm:mb-12">
-                <h1 class="text-4xl font-bold mb-6">Our Latest Portfolio</h1>
-                <p class="text-gray-600  w-3/4 sm:w-3/5 mx-auto mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-            </div>
+                <div class="flex-1 text-center mb-5 sm:mb-12">
+                    <h1 class="text-4xl font-bold mb-6">Our Latest Portfolio</h1>
+                    <p class="text-gray-600  w-3/4 sm:w-3/5 mx-auto mb-8">The barn house captivates with its blend of
+                        rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
             </div>
             <div class="grid sm:grid-cols-12 sm:grid-rows-2 gap-6 ">
                 <div class="border-solid border-2 border-gray-300 rounded-2xl col-span-full sm:col-span-8 sm:h-56 p-5">
@@ -284,7 +288,9 @@
                         <div class="sm:col-span-2">
                             <div class="">
                                 <h2 class="text-2xl font-bold mb-3">Commercial</h2>
-                                <p class="text-gray-600 mb-5 text-lg">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+                                <p class="text-gray-600 mb-5 text-lg">The barn house captivates with its blend of rustic
+                                    charm and modern. The barn house captivates with its blend of rustic charm and
+                                    modern .
                                 </p>
 
                                 <button class="font-bold flex gap-2">
@@ -296,7 +302,7 @@
                                             class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-2xl -rotate-45 w-6 h-6 inline-flex justify-center items-center"></i>
                                     </div>
                                 </button>
-        
+
                             </div>
                         </div>
                     </div>
@@ -313,16 +319,17 @@
                         <img class="h-full w-full" src="./assets/img4.png" alt="">
                         <div>
                             <h2 class="text-2xl font-bold mb-3">Commercial</h2>
-                            <p class="text-gray-600 mb-5 text-lg">The barn house captivates with its blend of rustic charm and modern.</p>
+                            <p class="text-gray-600 mb-5 text-lg">The barn house captivates with its blend of rustic
+                                charm and modern.</p>
                             <button class="font-bold flex gap-2">
-                                    <div>
-                                        View Details
-                                    </div>
-                                    <div class="gap-1">
-                                        <i
-                                            class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-2xl -rotate-45 w-6 h-6 inline-flex justify-center items-center"></i>
-                                    </div>
-                                </button>
+                                <div>
+                                    View Details
+                                </div>
+                                <div class="gap-1">
+                                    <i
+                                        class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-2xl -rotate-45 w-6 h-6 inline-flex justify-center items-center"></i>
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -334,6 +341,60 @@
         </div>
     </section>
 
+
+    <!-- Next project section  -->
+    <section class="w-full bg-inputBg bg-no-repeat bg-cover">
+        <div class="w-9/12 mx-auto py-12 sm:py-24">
+            <div>
+                <div class="mb-4 flex items-center justify-center">
+                    <button class="bg-[#ABEF5F33] rounded-3xl px-4 py-2 font-semibold text-sm flex gap-2">
+                        <div class="gap-1">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div>
+                            Let's Connect
+                        </div>
+                    </button>
+                </div>
+                <!-- text-section  -->
+                <div class="flex-1 text-center mb-5 sm:mb-12">
+                    <h1 class="text-4xl font-bold mb-6">Let’s Discuss Next Project</h1>
+                    <p class="text-gray-600 sm:w-3/5 mx-auto mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-2 sm:gap-6">
+                <input type="text" placeholder="First Name*"
+                    class="input input-bordered rounded-full bg-white w-full mb-6" />
+                <input type="text" placeholder="Last Name*"
+                    class="input input-bordered rounded-full bg-white w-full mb-6" />
+            </div>
+            <div class="grid sm:grid-cols-2 sm:gap-6">
+                <input type="text" placeholder="Phone Number*"
+                    class="input input-bordered rounded-full bg-white w-full mb-6" />
+                <input type="text" placeholder="Email Number*"
+                    class="input input-bordered rounded-full bg-white w-full mb-6" />
+            </div>
+            <div>
+                <textarea class="textarea textarea-bordered rounded-3xl h-[240px] w-full"
+                    placeholder="Write your message here"></textarea>
+            </div>
+
+            <div class="">
+                <button
+                    class="bg-[#ABEF5F] w-full rounded-3xl px-3 py-2 font-bold flex justify-center items-center gap-2">
+                    <div>
+                        Book Consult
+                    </div>
+                    <div class="gap-1">
+                        <i
+                            class="fa-solid fa-arrow-right text-white bg-black rounded-2xl -rotate-45 w-6 h-6 inline-flex justify-center items-center"></i>
+                    </div>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
 
